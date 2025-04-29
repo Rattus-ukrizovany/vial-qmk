@@ -27,7 +27,7 @@
         {
             "sync":
             {
-                "matrix_state": true
+                "detected_os": true
             }
         }
     },
@@ -120,8 +120,8 @@
         "layout":
         [
             {"matrix": [0, 0], "x": 90, "y": 54, "flags": 2},
-            {"matrix": [0, 1], "x": 90, "y": 58, "flags": 2},
-            {"matrix": [1, 0], "x": 121, "y": 54, "flags": 2},
+            {"matrix": [1, 0], "x": 90, "y": 58, "flags": 2},
+            {"matrix": [0, 1], "x": 121, "y": 54, "flags": 2},
             {"matrix": [1, 1], "x": 121, "y": 58, "flags": 2}
         ]
     }
