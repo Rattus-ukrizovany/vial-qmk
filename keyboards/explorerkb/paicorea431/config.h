@@ -17,16 +17,13 @@
 
 #pragma once
 
-/* Set 0 if debouncing isn't needed */
 #define DEBOUNCE 5
 
-/* Main Keyboard Hand*/
-#define USE_SERIAL
-#define SERIAL_USE_MULTI_TRANSACTION
 #define MASTER_RIGHT
 
 /* Pointing Device Setting*/
 #define AZOTEQ_IQS5XX_TPS43
+#define AZOTEQ_IQS5XX_TAP_TIME 150
 #define AZOTEQ_IQS5XX_PRESS_AND_HOLD_ENABLE 1
 #define AZOTEQ_IQS5XX_HOLD_TIME 300
 #define AZOTEQ_IQS5XX_SWIPE_INITIAL_TIME 150
@@ -38,3 +35,7 @@
 #define I2C_DRIVER I2CD1
 #define I2C1_SCL_PIN GP3
 #define I2C1_SDA_PIN GP2
+
+/* RGB LED Setting */
+#define RGBLIGHT_SLEEP
+
