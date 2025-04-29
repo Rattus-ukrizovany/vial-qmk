@@ -90,8 +90,8 @@
     },
     "rgblight":
     {
-        "led_count": 4,
-        "split_count": [2, 2],
+        "led_count": 6,
+        "split_count": [3, 3],
         "max_brightness": 120,
         "hue_steps": 10,
         "saturation_steps": 17,
@@ -116,13 +116,15 @@
     },
     "rgb_matrix":
     {
-        "split_count": [2, 2],
+        "split_count": [3, 3],
         "layout":
         [
-            {"matrix": [0, 0], "x": 90, "y": 54, "flags": 2},
-            {"matrix": [1, 0], "x": 90, "y": 58, "flags": 2},
-            {"matrix": [0, 1], "x": 121, "y": 54, "flags": 2},
-            {"matrix": [1, 1], "x": 121, "y": 58, "flags": 2}
+            {"matrix": [0, 0], "x": 94, "y": 44, "flags": 2},
+            {"matrix": [1, 0], "x": 94, "y": 46, "flags": 2},
+            {"matrix": [2, 0], "x": 94, "y": 48, "flags": 2},
+            {"matrix": [0, 1], "x": 130, "y": 44, "flags": 2},
+            {"matrix": [1, 1], "x": 130, "y": 46, "flags": 2},
+            {"matrix": [2, 1], "x": 130, "y": 48, "flags": 2}
         ]
     }
 }
