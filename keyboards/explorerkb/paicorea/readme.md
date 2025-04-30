@@ -1,8 +1,8 @@
-# Explorer Keyboard Blank #RGB
+# Paicorea
 
-![Blank](https://github.com/DreaM117er/Explorer-Keyboard-Blank/raw/main/pic/info/info4.jpg)
+![Paicorea](https://github.com/DreaM117er/Paicorea43-1/blob/main/pic/info2.png)
 
-The 3rd. Explorer Keyboard series, a Plank like split keyboard with muti-unit and 5V RGB LED Keylight.
+Paicorea is a 42 keys split keyboard, with optional way to drive Azoteq TPS43 trackpad.
 
 * Keyboard Maintainer: [DreaM117er](https://github.com/DreaM117er)
 * Keymap Supported: QMK, VIAL
@@ -11,12 +11,12 @@ The 3rd. Explorer Keyboard series, a Plank like split keyboard with muti-unit an
 
 Make example for this keyboard (after setting up your build environment):
 
-**RP2040 ProMicro supported: (RECOMMAND)**
+**Only RP2040 Core-A supported:**
 
-    make explorerkb/blankrgb/mcu/rp2040:[KEYMAP]
+    make explorerkb/paicorea:[KEYMAP]
 
 or
 
-    qmk compile -c -kb explorerkb/blankrgb/mcu/rp2040 -km [KEYMAP]
+    qmk compile -c -kb explorerkb/paicorea -km [KEYMAP]
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
