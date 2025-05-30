@@ -36,5 +36,3 @@
 #define I2C0_SCL_PIN GP1
 #define I2C0_SDA_PIN GP0
 
-/* RGB LED Setting */
-#define RGBLIGHT_SLEEP

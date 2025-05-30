@@ -1,5 +1,5 @@
 {
-    "keyboard_name": "Paicorea",
+    "keyboard_name": "Explorer",
     "manufacturer": "DreaM117er",
     "maintainer": "DreaM117er",
     "url": "",
@@ -35,7 +35,11 @@
     {
         "rotary":
         [
-            {"pin_a": "GP13", "pin_b": "GP15", "resolution": 4}
+            {
+                "pin_a": "GP13",
+                "pin_b": "GP15",
+                "resolution": 4
+            }
         ]
     },
     "layout": "LAYOUT",
