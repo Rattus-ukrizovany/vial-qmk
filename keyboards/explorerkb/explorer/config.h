@@ -19,9 +19,6 @@
 
 #define DEBOUNCE 5
 
-#define MASTER_RIGHT
-#define SPLIT_TRANSPORT_MIRROR
-
 /* Pointing Device Setting*/
 #define AZOTEQ_IQS5XX_TPS65
 #define AZOTEQ_IQS5XX_PRESS_AND_HOLD_ENABLE 1
