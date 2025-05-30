@@ -15,26 +15,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+
 #pragma once
 
-#define DEBOUNCE 5
+#include_next <mcuconf.h>
 
-#define MASTER_RIGHT
-#define SPLIT_TRANSPORT_MIRROR
-
-/* Pointing Device Setting*/
-#define AZOTEQ_IQS5XX_TPS43
-#define AZOTEQ_IQS5XX_PRESS_AND_HOLD_ENABLE 1
-#define AZOTEQ_IQS5XX_HOLD_TIME 300
-#define AZOTEQ_IQS5XX_SWIPE_INITIAL_TIME 150
-#define AZOTEQ_IQS5XX_SWIPE_INITIAL_DISTANCE 300
-#define SPLIT_POINTING_ENABLE
-#define POINTING_DEVICE_RIGHT
-
-/* I2C or SPI Setting*/
-#define I2C_DRIVER I2CD1
-#define I2C1_SCL_PIN GP3
-#define I2C1_SDA_PIN GP2
-
-/* RGB LED Setting */
-#define RGBLIGHT_SLEEP
+#undef RP_I2C_USE_I2C0
+#define RP_I2C_USE_I2C0 1
