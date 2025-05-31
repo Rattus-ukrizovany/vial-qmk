@@ -24,13 +24,13 @@
          KC_ESC,  KC_Q, KC_W,    KC_E,    KC_R,    KC_T,  TO(1),            KC_Y,  KC_U,    KC_I,    KC_O,   KC_P,    KC_BSPC,
          KC_LSFT, KC_A, KC_S,    KC_D,    KC_F,    KC_G,  XXXXXXX, XXXXXXX, KC_H,  KC_J,    KC_K,    KC_L,   KC_SCLN, KC_ENT,
          KC_LCTL, KC_Z, KC_X,    KC_C,    KC_V,    KC_B,  XXXXXXX, XXXXXXX, KC_N,  KC_M,    KC_COMM, KC_DOT, KC_SLSH, KC_QUOT,
-                        XXXXXXX, XXXXXXX, KC_LALT, MO(1), KC_SPC,  KC_RSFT, MO(2), XXXXXXX, XXXXXXX, XXXXXXX,
+                        XXXXXXX, XXXXXXX, KC_LALT, MO(1), KC_SPC,  KC_RSFT, MO(2), XXXXXXX, XXXXXXX, XXXXXXX
          ),
      [1] = LAYOUT(
          KC_ESC,  KC_PSLS, KC_1,    KC_2,    KC_3,          KC_PLUS, TO(0),            KC_PGUP, KC_HOME, KC_UP,   KC_END,  XXXXXXX, KC_BSPC,
          KC_TAB,  KC_PAST, KC_4,    KC_5,    KC_6,          KC_MINS, XXXXXXX, XXXXXXX, KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, KC_TRNS, KC_ENT,
-         KC_LCTL, KC_DOT,  KC_7,    KC_8,    KC_9,          KC_0,    XXXXXXX, XXXXXXX, KC_LBRC, KC_RBRC, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-                           XXXXXXX, XXXXXXX, OSM(MOD_LALT), KC_LGUI, KC_ENT,  KC_RSFT, KC_TRNS, XXXXXXX, XXXXXXX, KC_NUBS
+         KC_LCTL, KC_DOT,  KC_7,    KC_8,    KC_9,          KC_0,    XXXXXXX, XXXXXXX, KC_LBRC, KC_RBRC, KC_TRNS, KC_TRNS, KC_NUBS, KC_TRNS,
+                           XXXXXXX, XXXXXXX, OSM(MOD_LALT), KC_LGUI, KC_ENT,  KC_RSFT, KC_TRNS, XXXXXXX, XXXXXXX, XXXXXXX
          ),
      [2] = LAYOUT(
          KC_TILD,      XXXXXXX, KC_EXLM, KC_AT,   KC_HASH, KC_EQL,  TO(3),            KC_F1,   KC_F2,   KC_F3,  KC_F12, XXXXXXX, KC_DEL,
@@ -46,7 +46,8 @@
          )
  };
 
-const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
+#if defined(ENCODER_MAP_ENABLE)
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [0] =   {
             ENCODER_CCW_CW(KC_VOLD, KC_VOLU)
             },
@@ -60,6 +61,7 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
             ENCODER_CCW_CW(KC_TRNS, KC_TRNS)
             },
 };
+#endif
 
  #define SCROLL_SCALE_PERCENT 5
 
