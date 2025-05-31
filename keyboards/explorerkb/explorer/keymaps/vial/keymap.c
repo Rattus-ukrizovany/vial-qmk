@@ -48,22 +48,15 @@
 
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
-    [0] =   {
-            ENCODER_CCW_CW(KC_VOLD, KC_VOLU)
-            },
-    [1] =   {
-            ENCODER_CCW_CW(KC_TRNS, KC_TRNS)
-            },
-    [2] =   {
-            ENCODER_CCW_CW(KC_TRNS, KC_TRNS)
-            },
-    [3] =   {
-            ENCODER_CCW_CW(KC_TRNS, KC_TRNS)
-            },
+    [0] =   { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
+    [1] =   { ENCODER_CCW_CW(KC_TRNS, KC_TRNS) },
+    [2] =   { ENCODER_CCW_CW(KC_TRNS, KC_TRNS) },
+    [3] =   { ENCODER_CCW_CW(KC_TRNS, KC_TRNS) },
 };
 #endif
 
- #define SCROLL_SCALE_PERCENT 5
+#if defined(POINTING_DEVICE_ENABLE)
+#define SCROLL_SCALE_PERCENT 5
 
  int32_t scroll_amount_h = 0;
  int32_t scroll_amount_v = 0;
@@ -80,4 +73,4 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
      mouse_report.v = v;
      return mouse_report;
  }
-
+#endif
