@@ -23,11 +23,11 @@
 #define MASTER_LEFT
 
 /* Encoder EC-11 */
-#define ENCODERS_PAD_A { GP28 }
-#define ENCODERS_PAD_B { GP29 }
-#define ENCODER_RESOLUTION 2
-#define ENCODERS_PAD_A_RIGHT { GP29 }
-#define ENCODERS_PAD_B_RIGHT { GP28 }
+#define ENCODER_A_PINS { GP28 }
+#define ENCODER_B_PINS { GP29 }
+#define ENCODER_RESOLUTION 4
+#define ENCODER_A_PINS_RIGHT { GP29 }
+#define ENCODER_B_PINS_RIGHT { GP28 }
 #define TAP_CODE_DELAY 10
 
 /* ws2812 RGB LED */

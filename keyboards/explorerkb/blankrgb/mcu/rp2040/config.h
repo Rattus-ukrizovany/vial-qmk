@@ -26,11 +26,11 @@
 #define MASTER_RIGHT
 
 /* Encoder EC-11 */
-#define ENCODERS_PAD_A { GP29 }
-#define ENCODERS_PAD_B { GP28 }
+#define ENCODER_A_PINS { GP29 }
+#define ENCODER_B_PINS { GP28 }
 #define ENCODER_RESOLUTIONS { 4 }
-#define ENCODERS_PAD_A_RIGHT { GP28 }
-#define ENCODERS_PAD_B_RIGHT { GP29 }
+#define ENCODER_A_PINS_RIGHT { GP28 }
+#define ENCODER_B_PINS_RIGHT { GP29 }
 #define ENCODER_RESOLUTIONS_RIGHT { 4 }
 #define TAP_CODE_DELAY 10
 

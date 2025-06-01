@@ -23,9 +23,9 @@
 #define MASTER_LEFT
 
 /* Encoder EC-11 */
-#define ENCODERS_PAD_A { F7 }
-#define ENCODERS_PAD_B { F6 }
-#define ENCODERS_PAD_A_RIGHT { F6 }
-#define ENCODERS_PAD_B_RIGHT { F7 }
-#define ENCODER_RESOLUTION 1
+#define ENCODER_A_PINS { GP28 }
+#define ENCODER_B_PINS { GP29 }
+#define ENCODER_RESOLUTION 4
+#define ENCODER_A_PINS_RIGHT { GP29 }
+#define ENCODER_B_PINS_RIGHT { GP28 }
 #define TAP_CODE_DELAY 10

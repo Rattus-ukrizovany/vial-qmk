@@ -21,7 +21,7 @@
 #define DEBOUNCE 5
 
 /* Encoder EC-11 */
-#define ENCODERS_PAD_A { GP0, GP2, GP4 ,GP6 }
-#define ENCODERS_PAD_B { GP1, GP3, GP5 ,GP7 }
+#define ENCODER_A_PINS { GP0, GP2, GP4 ,GP6 }
+#define ENCODER_B_PINS { GP1, GP3, GP5 ,GP7 }
 #define ENCODER_RESOLUTION 4
 #define TAP_CODE_DELAY 10
